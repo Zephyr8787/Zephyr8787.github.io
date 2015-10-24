@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="">
+
+		<title>Profile</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="./css/bootstrap.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="./css/navbar.css" rel="stylesheet">
+
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="./js/ie-emulation-modes-warning.js"></script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<script>
+			function show(login,showLogin){
+				document.getElementById(login).style.display="inline";
+				document.getElementById(showLogin).style.display="none";
+			}
+		</script>
+	</head>
+
+	<body>
+
+    <div class="container">
+
+    <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+			<div class="container-fluid">
+			    <div class="navbar-header">
+					<a href="index.html"><img  src="./image/bluebelllogo.png" alt="Blue Bell" height="40px" style="margin-top:5px"></a>
+			    </div>
+				
+			    <div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="rooms.html">Rooms</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					
+				<form class="navbar-form navbar-right" method="POST">
+					<div id="login" hidden>
+						<div class="form-group">
+							<input type="text" placeholder="Username" class="form-control" required>
+							<input type="password" placeholder="Password" class="form-control" required>
+							<input type="submit" class="btn btn-primary" value="Log in"/>
+						</div>
+					</div>
+				<input type="button" class="btn btn-primary" onclick="show('login','showLogin')" value="Log in" id="showLogin"/>
+				</form>
+			    </div><!--/.nav-collapse -->
+			</div><!--/.container-fluid -->
+        </nav>
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+		<h1 align="center">Profile</h1><br/><br/>
+				<p>BlueBell offer guests an extraordinary place that is created by combining unique architecture and structure, expressive decor and artistry, and magnificent features all in one great location.
+				We create a vibe that encourages our guests, who we call the Creative Class, to live every moment more intensely.Our highly personalized 24-hour service, combined with authentic,
+				elegant surroundings of the highest quality, embodies a home away from home for those who know and appreciate the best.Add great service to this and the result is an extraordinary experience
+				that would make your memory of BlueBell a long and lasting one.</p>
+				
+				<p>BlueBell Boutique have 44 rooms with different rate. All BlueBell Boutique Hotel rooms come with an en-suite facilities as well as private bathrooms with hot showers.We also provide extra beds and safety box.
+				Our rooms are designed to meet the needs of well travelled discerning individuals by focusing on certain priorities such comfort and security without costly frills.We offer our guests less space for a better price,
+				thus gives you the best value Boutique hotel in Taman Impian Emas.</p>
+    </div>
+	
+	<footer>
+		<p class="pull-right"><a href="#">Back to top</a></p>
+		<p>&copy; 2015 Company, Inc.</p>
+	</footer>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+</html>
